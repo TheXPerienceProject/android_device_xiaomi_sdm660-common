@@ -1,3 +1,4 @@
+ifneq ($(filter twolip jasmine_sprout wayne clover platina jason whyred,$(TARGET_DEVICE)),)
 ifneq ($(BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE),)
 ifneq ($(BUILD_TINY_ANDROID),true)
 
@@ -60,3 +61,4 @@ include $(BUILD_HEADER_LIBRARY)
 
 endif # not BUILD_TINY_ANDROID
 endif # BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE
+endif # Devices 
