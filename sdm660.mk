@@ -580,3 +580,6 @@ PRODUCT_BOOT_JARS += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
    XiaomiParts
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
