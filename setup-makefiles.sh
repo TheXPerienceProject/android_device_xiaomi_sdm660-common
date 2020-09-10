@@ -28,7 +28,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/havoc/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/xperience/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -39,7 +39,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "twolip jasmine_sprout wayne clover lavender platina jason whyred"
+write_headers "twolip jasmine_sprout wayne clover platina jason whyred"
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
