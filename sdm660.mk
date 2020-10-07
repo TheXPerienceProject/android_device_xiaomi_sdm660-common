@@ -573,10 +573,15 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-# WiFi Display JAR
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # XiaomiParts
 PRODUCT_PACKAGES += \
    XiaomiParts
+
+# Qcom targets
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd-legacy
+
